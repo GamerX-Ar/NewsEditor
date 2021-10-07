@@ -1,0 +1,7 @@
+# Project exclude paths
+/news-editor-core/target/
+/news-editor-dao/target/
+/news-editor-data/target/
+/news-editor-jdbc/target/
+/news-editor-service/target/
+/news-editor-web/target/

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <display-name>Functions</display-name>
+    <tlib-version>2.1</tlib-version>
+    <short-name>f</short-name>
+    <uri>http://www.hubble.com/functions</uri>
+
+
+    <function>
+        <name>getDictionary</name>
+        <function-class>com.hubble.service.DictionaryService</function-class>
+        <function-signature>com.hubble.data.domain.Dictionary getDictionary(com.hubble.data.domain.Dictionary.Type)</function-signature>
+    </function>
+    
+    <function>
+        <name>getNews</name>
+        <function-class>com.hubble.service.NewsService</function-class>
+        <function-signature>com.hubble.data.domain.News getNews(long)</function-signature>
+    </function>
+
+    <function>
+        <name>getNewsList</name>
+        <function-class>com.hubble.service.NewsService</function-class>
+        <function-signature>java.util.List getNewsList(int,int)</function-signature>
+    </function>
+
+    <function>
+        <name>getNewsWithType</name>
+        <function-class>com.hubble.service.NewsService</function-class>
+        <function-signature>java.util.List getNewsList(int,int,com.hubble.data.domain.News.Type)</function-signature>
+    </function>
+
+    <function>
+        <name>getPublishedNews</name>
+        <function-class>com.hubble.service.NewsService</function-class>
+        <function-signature>java.util.List getPublishedNews(com.hubble.data.domain.News.Type)</function-signature>
+    </function>
+
+    <function>
+        <name>getNewsCount</name>
+        <function-class>com.hubble.service.NewsService</function-class>
+        <function-signature>int getNewsCount()</function-signature>
+    </function>
+
+    <function>
+        <name>getNewsCountWithTaS</name>
+        <function-class>com.hubble.service.NewsService</function-class>
+        <function-signature>int getNewsCount(com.hubble.data.domain.News.Type,com.hubble.data.domain.News.Status)</function-signature>
+    </function>
+
+</taglib>
